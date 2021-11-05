@@ -14,7 +14,9 @@ dotenv.config({ path: './.env'})
 
 const googlejs = require('./routes/google.js');
 app.use('/', googlejs);
-const drinkRouter = require('./routes/drink');
+const mapRouter = require('./routes/map.js')
+app.use('/map', mapRouter);
+const drinkRouter = require('./routes/drink.js');
 app.use('/drink', drinkRouter);
 
 
