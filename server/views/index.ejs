@@ -21,8 +21,11 @@
 </head>
 <body>
 
-    <!-- 메뉴 -->
-    <div data-include-path="header.html"></div>
+
+<header>
+    <%- include('header.ejs') -%>
+</header>
+
 
     <!-- 슬라이드 -->
     <div id="wrapper">
@@ -316,7 +319,7 @@
 
     </div>
     <!-- footer -->
-    <div data-include-path="footer.html"></div>
+    <%- include('footer.ejs') -%>
 
 </body>
 

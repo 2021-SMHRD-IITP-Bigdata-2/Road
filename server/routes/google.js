@@ -14,11 +14,11 @@ const client = new OAuth2Client(CLIENT_ID);
 
 // <--                                 구글 로그인 start                                  -->
 // login.ejs 렌더링
-router.get('/', (req, res) => {
+router.get('/login', (req, res) => {
     res.render('login')
     console.log('login');
 });
-router.post('/', (req, res) => {
+router.post('/login', (req, res) => {
     let token = req.body.token;
     console.log(token);
 

@@ -26,29 +26,33 @@
     <div class="login-right">
         <main>
             <!--
-            <div class="logo"><a href="introduction.html"><img src="img/logo.png"></a></div>
+            <div class="logo"><a href="introduction.ejs"><img src="img/logo.png"></a></div>
             -->
             <article class="join-form">
                 <div class="join-text">
                     <p>JOIN</p>
                 </div>
+<!--    sign-up 경로로 post  -->
+                <form action="/sign-up" method="post" id="register">
                 <div class="login_email">
-                    <input type="text" placeholder="Email" class="idValue">
+                    <input type="text" placeholder="Email" class="idValue" name="id">
                 </div>
                 <div class="login_name">
-                    <input type="password" placeholder="Name" class="passwordValue">
+                    <input type="password" placeholder="Name" class="passwordValue" name="username">
+
                 </div>
                 <div class="login_nickname">
-                    <input type="password" placeholder="Nickname" class="passwordValue">
+                    <input type="password" placeholder="Nickname" class="passwordValue" name="user_nick">
+
                 </div>
                 <div class="login_password">
-                    <input type="password" placeholder="Password" class="passwordValue">
+                    <input type="password" placeholder="Password" class="passwordValue" name="password">
                 </div>
                 <div class="login_password">
                     <input type="password" placeholder="Confirm password" class="passwordValue">
                 </div>
                 <div class="login_password">
-                    <input type="password" placeholder="Phone" class="passwordValue">
+                    <input type="password" placeholder="Phone" class="passwordValue" name="user_phone">
                 </div>
                 <div class="login-language">
                     <select class="select-box">
@@ -57,8 +61,9 @@
                     </select>
                 </div>
                 <div class="join-button">
-                    <a href="#index"><button class="login_btn">JOIN</button></a>
+                    <a href="/index"><button class="login_btn">JOIN</button></a>
                 </div>
+                </form>
             </article>
             <div class="social-login">
                 <hr class="leftHr">

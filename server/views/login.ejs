@@ -29,11 +29,11 @@
     </div>
     <div class="login-right">
         <main>
-            <div class="logo"><a href="introduction.html"><img src="img/logo.png"></a></div>
+            <div class="logo"><a href="views/introduction.ejs"><img src="img/logo.png"></a></div>
             <article>
-                <form action="/api/login" method="post">
+                <form action="/index" method="post">
                 <div class="login_id">
-                    <input type="text" placeholder="ID" class="idValue" name="username">
+                    <input type="text" placeholder="ID" class="idValue" name="id">
                 </div>
                 <div class="login_password">
                     <input type="password" placeholder="PW" class="passwordValue" name="password">
@@ -100,7 +100,7 @@
             console.log('Signed in as: ' + xhr.responseText);
             if(xhr.responseText == 'success'){
                 signOut();
-                location.assign('/index')
+                location.assign('/register')
             }
         };
         xhr.send(JSON.stringify({token : id_token}));
