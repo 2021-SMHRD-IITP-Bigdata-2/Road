@@ -36,9 +36,7 @@
     <input type="text" placeholder="search" title="검색" id="inp_search" autocomplete="off">
     <a href="" class="btn_search"><i class="bi bi-search" style="color: rgb(206, 206, 206);"></i></a>
     <div class="oo"></div>
-    <div class="mbti">
-        <a class="btn-more" href="mbti.html">MBTI</a>
-    </div>
+    <button type="button" class="mbti" onclick = "location.href = 'mbti.ejs' " >MBTI</button>
 </div>
 
 
@@ -55,7 +53,30 @@
                         </p>
                     </div>
                     <div class="rank-text-star">
-                        <%= liquors[12].liquor_score %>
+                        <% var liquor_score = liquors[12].liquor_score;
+                        var liquor_score_star = 0;
+                        var result;
+                        result = liquor_score % 1;
+                        if(result == 0){
+                        for(var i=0; i<5; i++){
+                        if(i<liquor_score){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                        for(var i=0; i<liquor_score_star; i++){
+                        if(i<liquor_score_star){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }%>
+                        <i class="bi bi-star-half"></i>
+                        <%
+                        }%>
                     </div>
                 </div>
             </div>
@@ -71,7 +92,30 @@
                         </p>
                     </div>
                     <div class="rank-text-star">
-                        <%= liquors[1].liquor_score %>
+                        <% var liquor_score = liquors[1].liquor_score;
+                        var liquor_score_star = 0;
+                        var result;
+                        result = liquor_score % 1;
+                        if(result == 0){
+                            for(var i=0; i<5; i++){
+                                if(i<liquor_score){ %>
+                                    <i class="bi bi-star-fill"></i>
+                            <% }else{ %>
+                                    <i class="bi bi-star"></i>
+                             <%}
+                             }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                            for(var i=0; i<liquor_score_star; i++){
+                                if(i<liquor_score_star){ %>
+                                    <i class="bi bi-star-fill"></i>
+                            <% }else{ %>
+                                    <i class="bi bi-star"></i>
+                                <%}
+                            }%>
+                            <i class="bi bi-star-half"></i>
+                            <%
+                        }%>
                     </div>
                 </div>
             </div>
@@ -87,7 +131,30 @@
                         </p>
                     </div>
                     <div class="rank-text-star">
-                        <%= liquors[39].liquor_score %>
+                        <% var liquor_score = liquors[39].liquor_score;
+                        var liquor_score_star = 0;
+                        var result;
+                        result = liquor_score % 1;
+                        if(result == 0){
+                        for(var i=0; i<5; i++){
+                        if(i<liquor_score){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                        for(var i=0; i<liquor_score_star; i++){
+                        if(i<liquor_score_star){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }%>
+                        <i class="bi bi-star-half"></i>
+                        <%
+                        }%>
                     </div>
                 </div>
             </div>
@@ -103,7 +170,30 @@
                         </p>
                     </div>
                     <div class="rank-text-star">
-                        <%= liquors[17].liquor_score %>
+                        <% var liquor_score = liquors[1].liquor_score;
+                        var liquor_score_star = 0;
+                        var result;
+                        result = liquor_score % 1;
+                        if(result == 0){
+                        for(var i=0; i<5; i++){
+                        if(i<liquor_score){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                        for(var i=0; i<liquor_score_star; i++){
+                        if(i<liquor_score_star){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }%>
+                        <i class="bi bi-star-half"></i>
+                        <%
+                        }%>
                     </div>
                 </div>
             </div>
@@ -119,7 +209,30 @@
                         </p>
                     </div>
                     <div class="rank-text-star">
-                        <%= liquors[25].liquor_score %>
+                        <% var liquor_score = liquors[25].liquor_score;
+                        var liquor_score_star = 0;
+                        var result;
+                        result = liquor_score % 1;
+                        if(result == 0){
+                        for(var i=0; i<5; i++){
+                        if(i<liquor_score){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                        for(var i=0; i<liquor_score_star; i++){
+                        if(i<liquor_score_star){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }%>
+                        <i class="bi bi-star-half"></i>
+                        <%
+                        }%>
                     </div>
                 </div>
             </div>
@@ -130,6 +243,12 @@
     i++;
 } else {
     var data = liquors[i];
+    <!-- 별 내가 조진다 -->
+    var liquor_score = data.liquor_score;
+    var liquor_score_star;
+    var result;
+    result = liquor_score % 1;
+    <!-- 조져지는건 나였다 현재 별점 4.5만 동작함 3.5 나오면 난리남-->
 %>
 <div class="drink-all">
     <ul>
@@ -153,10 +272,30 @@
                     </div>
                     <span>|</span>
                     <div class="drink-c">
-                        <%= data.liquor_c %>
+                        🍶 <%= data.liquor_c %>%
                     </div>
                     <span>|</span>
-                    <div class="drink-score">★★★☆☆ <%= data.liquor_score %>
+                    <div class="drink-score">
+                        <%if(result == 0){
+                        for(var s=0; s<5; s++){
+                        if(s<liquor_score){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }
+                        }else{
+                            liquor_score_star = liquor_score-1;
+                        for(var s=0; s<liquor_score_star; s++){
+                        if(s<liquor_score_star){ %>
+                            <i class="bi bi-star-fill"></i>
+                        <% }else{ %>
+                            <i class="bi bi-star"></i>
+                        <%}
+                        }%>
+                        <i class="bi bi-star-half"></i>
+                        <%
+                        }%>
                     </div>
                 </div>
             </div>

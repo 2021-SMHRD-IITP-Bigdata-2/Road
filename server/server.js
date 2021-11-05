@@ -12,10 +12,11 @@ const cookieParser = require("cookie-parser");
 // .env 파일 사용
 dotenv.config({ path: './.env'})
 
-const drinkRouter = require('./routes/drink');
-app.use('/drink', drinkRouter);
 const googlejs = require('./routes/google.js');
 app.use('/', googlejs);
+const drinkRouter = require('./routes/drink');
+app.use('/drink', drinkRouter);
+
 
 
 //ejs 사용
